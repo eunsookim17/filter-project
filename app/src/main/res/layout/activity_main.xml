@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--1. Toolbar - (text, filter) -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="MBTI"
+            android:textAllCaps="true"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="30sp" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/filterButton"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="end"-->
+        <!--            android:layout_marginRight="5dp"-->
+        <!--            android:background="@null"-->
+        <!--            android:onClick="showFilterTapped"-->
+        <!--            android:text="FILTER"-->
+        <!--            android:textColor="#F2EDED"-->
+        <!--            android:textSize="30sp" />-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--2. 이동엑티비티(목록, 채팅방) 만들기-->
+
+
+    <!-- 3. MBTi button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="INTJ"
+            android:id="@+id/inTj"
+            android:background="@color/black"
+            android:onClick="inTjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="INTP"
+            android:id="@+id/inTp"
+            android:background="@color/black"
+            android:onClick="intpFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="INFJ"
+            android:id="@+id/inFj"
+            android:background="@color/black"
+            android:onClick="infjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="INFP"
+            android:id="@+id/inFp"
+            android:background="@color/black"
+            android:onClick="infpFilter"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ISTJ"
+            android:id="@+id/isTj"
+            android:background="@color/black"
+            android:onClick="istjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ISTP"
+            android:id="@+id/isTp"
+            android:background="@color/black"
+            android:onClick="istpFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ISFJ"
+            android:id="@+id/isFj"
+            android:background="@color/black"
+            android:onClick="isfjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ISFP"
+            android:id="@+id/isFp"
+            android:background="@color/black"
+            android:onClick="inspFilter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ENTJ"
+            android:id="@+id/enTj"
+            android:background="@color/black"
+            android:onClick="entjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ENTP"
+            android:id="@+id/enTp"
+            android:background="@color/black"
+            android:onClick="entpFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ENFJ"
+            android:id="@+id/enFj"
+            android:background="@color/black"
+            android:onClick="enfjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ENFP"
+            android:id="@+id/enFp"
+            android:background="@color/black"
+            android:onClick="enfpFilter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ESTJ"
+            android:id="@+id/esTj"
+            android:background="@color/black"
+            android:onClick="estjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ESTP"
+            android:id="@+id/esTp"
+            android:background="@color/black"
+            android:onClick="estpFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ESFJ"
+            android:id="@+id/esFj"
+            android:background="@color/black"
+            android:onClick="esfjFilter"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="ESFP"
+            android:id="@+id/esFp"
+            android:background="@color/black"
+            android:onClick="esfpFilter"/>
+    </LinearLayout>
+
+    <!-- 4. All button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="All"
+            android:id="@+id/allButton"
+            android:background="@color/black"
+            android:onClick="allFilterTapped"/>
+    </LinearLayout>
+
+    <!--list창 (선택된 아이템 목록)-->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView">
+    </ListView>
+</LinearLayout>
